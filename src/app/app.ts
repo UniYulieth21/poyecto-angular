@@ -1,12 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+﻿import { Component } from '@angular/core';
+import { EncabezadoComponent } from './encabezado/encabezado';
+import { ListadoComponent } from './listado/listado';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [EncabezadoComponent, ListadoComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('angular-listado-bootstrap');
-}
+export class App {}
