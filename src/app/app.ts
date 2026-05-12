@@ -1,12 +1,11 @@
-﻿import { Component } from '@angular/core';
-import { EncabezadoComponent } from './encabezado/encabezado';
-import { ListadoComponent } from './listado/listado';
+import { Component } from "@angular/core";
+import { RouterOutlet, RouterLink, RouterLinkActive } from "@angular/router";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  imports: [EncabezadoComponent, ListadoComponent],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  templateUrl: "./app.html",
+  styleUrl: "./app.css"
 })
 export class App {}

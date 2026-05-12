@@ -1,2 +1,10 @@
-﻿<app-encabezado></app-encabezado>
-<app-listado></app-listado>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" routerLink="/inicio">MisLibros</a>
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link" routerLink="/inicio" routerLinkActive="active">Inicio</a>
+      <a class="nav-link" routerLink="/libros" routerLinkActive="active">Libros</a>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
